@@ -1,0 +1,292 @@
+<!DOCTYPE html>
+<html lang="en">
+
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no" />
+    <meta http-equiv="x-ua-compatible" content="ie=edge" />
+    <link href='https://fonts.googleapis.com/css?family=Poppins' rel='stylesheet'>
+    <link href='https://fonts.googleapis.com/css?family=Poppins' rel='stylesheet'>
+    <link href='https://fonts.googleapis.com/css?family=Major Mono Display' rel='stylesheet'>
+    <title>Anuj UI/UX</title>
+    <!-- MDB icon -->
+    <link rel="icon" href="img/7.png" type="image/x-icon" />
+    <!-- MDB -->
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/mdb-ui-kit/3.10.1/mdb.min.css" rel="stylesheet" />
+
+    <style>
+      .webgl {
+        position: absolute;
+        top: 0;
+        left: 0;
+        outline: none;
+        z-index: -1;
+        background-color: rgb(0, 0, 0);
+      }
+
+      h2.first {
+        margin-right: 62.5vw;
+        margin-top: 18vw;
+        font-size: 4vw;
+        font-family: Major Mono Display;
+      }
+
+      h2.last {
+        margin-left: 62.5vw;
+        margin-top: -5.6vw;
+        font-size: 4vw;
+        font-family: Major Mono Display;
+      }
+
+      .topnav {
+        margin-top: 2.5vw;
+        margin-left: -5vw;
+      }
+
+
+      .topnav-centered a {
+        font-family: Poppins;
+        color: rgb(255, 255, 255);
+        text-align: center;
+        padding: 2vw 0.5vw;
+        text-decoration: none;
+        font-size: 1.05vw;
+        padding-top: 8vw;
+        margin-left: 5vw;
+
+      }
+
+      .topnav-centered a:hover {
+
+        color: rgb(94, 190, 253);
+      }
+
+
+      .foot {
+        /* margin-left: 2vw;
+    text-align: center;
+    margin-top: 12.5vw;
+    margin-left: -5vw;*/
+        position: fixed;
+        left: 0;
+        bottom: 2vw;
+        width: 100%;
+        text-align: center;
+        margin-left: -3vw;
+      }
+
+      .twi {
+        height: 1.9vw;
+        width: 2.2vw;
+        margin-left: 4vw;
+        transition: transform ease-in-out .3s;
+
+      }
+
+      .twi:hover {
+        transform: scale(1.25);
+        /* (150% zoom - Note: if the zoom is too large, it will go outside of the viewport) */
+      }
+
+      .inst {
+        height: 1.95vw;
+        width: 2vw;
+        margin-left: 8vw;
+        margin-top: 0vw;
+        transition: transform ease-in-out .3s;
+
+      }
+
+      .inst:hover {
+        transform: scale(1.25);
+        /* (150% zoom - Note: if the zoom is too large, it will go outside of the viewport) */
+      }
+
+
+      .link {
+        height: 1.8vw;
+        width: 1.85vw;
+        margin-left: 8vw;
+        margin-top: 0vw;
+        margin-bottom: 0.25vw;
+        transition: transform ease-in-out .3s;
+
+      }
+
+      .link:hover {
+        transform: scale(1.25);
+        /* (150% zoom - Note: if the zoom is too large, it will go outside of the viewport) */
+      }
+    </style>
+  </head>
+
+  <body>
+    <div class="container text-center text-white">
+
+      <header>
+
+        <div class="topnav">
+
+          <!-- Centered link -->
+          <div class="topnav-centered">
+            <a href="project.html">Projects</a>
+            <a href="resume.html">Resume</a>
+            <a href="#socials">Contact</a>
+          </div>
+
+        </div>
+      </header>
+      <h2 class="first">Anuj</h2>
+      <h2 class="last">ui/uX</h2>
+      <footer>
+        <div class="foot">
+          <a href="https://twitter.com/A_n_u_j_06" target="_blank"> <img class="twi" src="img/1.png"></a>
+          <a href="https://www.instagram.com/anuj.undesign/" target="_blank"> <img class="inst" src="img/2.png"
+              alt=""></a>
+          <a href="https://www.linkedin.com/in/anuj-sonawane-323359206/" target="_blank"> <img class="link"
+              src="img/3.png" alt=""></a>
+        </div>
+      </footer>
+    </div>
+
+    <canvas class="webgl"></canvas>
+
+    <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/mdb-ui-kit/3.10.1/mdb.min.js"></script>
+
+    <!-- Three.js core -->
+    <script type="text/javascript" src="js/three.min.js"></script>
+    <script type="text/javascript" src="js/OrbitControls.js"></script>
+    <!-- Three.js setup -->
+    <script type="text/javascript">
+
+      // Texture
+
+
+      // Canvas
+      const canvas = document.querySelector("canvas.webgl");
+
+      // Scene
+      const scene = new THREE.Scene();
+
+      // Objects
+      const geometry = new THREE.TorusKnotGeometry(0.45, 0.1, 250, 40);
+
+      // Materials
+      const material = new THREE.MeshStandardMaterial({ color: 0x049ef4, wireframe: false, metalness: 1, roughness: 0, emissive: 0x030d35 });
+      const spotLight = new THREE.SpotLight(0xffffff, 1000);
+      spotLight.position.set(100, 50, 100);
+
+      spotLight.castShadow = true;
+
+      spotLight.shadow.mapSize.width = 1024;
+      spotLight.shadow.mapSize.height = 1024;
+
+      spotLight.shadow.camera.near = 500;
+      spotLight.shadow.camera.far = 4000;
+      spotLight.shadow.camera.fov = 100;
+
+      scene.add(spotLight);
+
+      const spotLight1 = new THREE.SpotLight(0xffffff, 3000);
+      spotLight1.position.set(1000, 10000, -100);
+
+      spotLight1.castShadow = true;
+
+      spotLight1.shadow.mapSize.width = 1024;
+      spotLight1.shadow.mapSize.height = 1024;
+
+      spotLight1.shadow.camera.near = 500;
+      spotLight1.shadow.camera.far = 4000;
+      spotLight1.shadow.camera.fov = 30;
+
+      scene.add(spotLight1);
+      //const material = new THREE.MeshStandardMaterial();
+      //material.map = normalTexture;
+
+      // Mesh
+      const shape = new THREE.Mesh(geometry, material);
+      scene.add(shape);
+
+      // Lights
+      const pointLight = new THREE.PointLight(0xffffff, 1);
+      pointLight.position.x = 2;
+      pointLight.position.y = 3.5;
+      pointLight.position.z = 20;
+      scene.add(pointLight);
+
+      /**
+       * Sizes
+       */
+      const sizes = {
+        width: window.innerWidth,
+        height: window.innerHeight,
+      };
+
+      window.addEventListener("resize", () => {
+        // Update sizes
+        sizes.width = window.innerWidth;
+        sizes.height = window.innerHeight;
+
+        // Update camera
+        camera.aspect = sizes.width / sizes.height;
+        camera.updateProjectionMatrix();
+
+        // Update renderer
+        renderer.setSize(sizes.width, sizes.height);
+        renderer.setPixelRatio(Math.min(window.devicePixelRatio, 2));
+      });
+
+      /**
+       * Camera
+       */
+      // Base camera
+      const camera = new THREE.PerspectiveCamera(
+        75,
+        sizes.width / sizes.height,
+        0.1,
+        100
+      );
+      camera.position.x = 0;
+      camera.position.y = 1.75;
+      camera.position.z = 0.25;
+      scene.add(camera);
+
+      /**
+       * Renderer
+       */
+      const renderer = new THREE.WebGLRenderer({
+        canvas: canvas,
+      });
+      renderer.setSize(sizes.width, sizes.height);
+      renderer.setPixelRatio(Math.min(window.devicePixelRatio, 2));
+
+      /**
+       * Animate
+       */
+
+      controls = new THREE.OrbitControls(camera, renderer.domElement);
+
+      const clock = new THREE.Clock();
+
+      const tick = () => {
+        const elapsedTime = clock.getElapsedTime();
+
+        // Update objects
+        shape.rotation.y = 0.2 * elapsedTime;
+        shape.rotation.x = 0.5 * elapsedTime;
+
+        // Update Orbital Controls
+        // controls.update()
+
+        // Render
+        renderer.render(scene, camera);
+
+        // Call tick again on the next frame
+        window.requestAnimationFrame(tick);
+      };
+
+      tick();
+    </script>
+  </body>
+
+</html>

@@ -1,0 +1,135 @@
+body {
+    background-color: black;
+    scroll-behavior: smooth;
+}
+
+h1.title {
+    font-size: 3vw;
+    color: white;
+    font-family: Major Mono Display;
+    margin-left: 2.5vw;
+    margin-top: 2.5vw;
+}
+
+img.back {
+
+    height: 1.5vw;
+    float: right;
+    margin-top: -5vw;
+    margin-right: 2.5vw;
+}
+
+.sec1 {
+    margin-top: 5vw;
+}
+
+.sec2 {
+    margin-top: 5vw;
+    margin-bottom: 3vw;
+}
+
+.projects {
+    color: white;
+    margin-left: 2.5vw;
+    font-family: Poppins;
+}
+
+h2.second {
+    color: white;
+    margin-left: 0vw;
+    font-family: Poppins;
+}
+
+h2.second2 {
+    color: white;
+    margin-left: 0vw;
+    font-family: Poppins;
+}
+
+.first {
+    margin-top: 3vw;
+    font-size: 1.25vw;
+}
+
+.second {
+    margin-left: 50vw;
+    margin-top: -43.4vw;
+    font-size: 2vw;
+}
+
+.second1 {
+    margin-left: 50vw;
+    margin-top: -46.9vw;
+    font-size: 2vw;
+}
+
+.second2 {
+    margin-left: 50vw;
+    margin-top: -41.85vw;
+    font-size: 2vw;
+}
+
+p.first {
+    margin-top: 1.5vw;
+    margin-right: 52.5vw;
+    font-size: 1.15vw;
+}
+
+p.second {
+    margin-top: 1.5vw;
+    margin-left: 0vw;
+    margin-right: 2.5vw;
+    font-size: 1.15vw;
+}
+
+p.second2 {
+    margin-top: 1.5vw;
+    margin-left: 0vw;
+    margin-right: 2.5vw;
+    font-size: 1.15vw;
+}
+
+img.first {
+    margin-top: 0.5vw;
+    height: 28vw;
+    width: 42.5vw;
+    border-radius: 1%;
+    cursor: pointer;
+}
+
+#myBtn {
+    display: none;
+    /* Hidden by default */
+    position: fixed;
+    /* Fixed/sticky position */
+    bottom: 20px;
+    /* Place the button at the bottom of the page */
+    right: 30px;
+    /* Place the button 30px from the right */
+    z-index: 99;
+    /* Make sure it does not overlap */
+    border: none;
+    /* Remove borders */
+    outline: none;
+    /* Remove outline */
+    background-color: rgb(0, 166, 231);
+    /* Set a background color */
+    color: white;
+    /* Text color */
+    cursor: pointer;
+    /* Add a mouse pointer on hover */
+    padding: 15px;
+    /* Some padding */
+    border-radius: 100%;
+    /* Rounded corners */
+    font-size: 25px;
+    width: 58px;
+    /* Increase font size */
+    scroll-behavior: smooth;
+}
+
+#myBtn:hover {
+    background-color: rgb(0, 87, 145);
+    scroll-behavior: smooth;
+    /* Add a dark-grey background on hover */
+}

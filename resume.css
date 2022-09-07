@@ -1,0 +1,355 @@
+body {
+    background-color: black;
+}
+
+h1.title {
+    font-size: 3vw;
+    color: white;
+    font-family: Major Mono Display;
+    margin-left: 2.5vw;
+    margin-top: 2.5vw;
+}
+
+img.back {
+
+    height: 1.5vw;
+    float: right;
+    margin-top: -5vw;
+    margin-right: 2.5vw;
+}
+
+div.resume {
+    margin-left: 7vw;
+    margin-top: 5.5vw;
+}
+
+img.pro {
+    border-radius: 100%;
+    width: 13vw;
+    height: 13.5vw;
+    margin-left: 2.5vw;
+    margin-top: 2.5vw;
+}
+
+h1.name {
+    color: white;
+    font-family: Poppins;
+    font-size: 3vw;
+    margin-left: 22.5vw;
+    margin-top: -12.5vw;
+}
+
+h3.name {
+    color: #17BAFF;
+    font-family: Poppins;
+    font-size: 2vw;
+    margin-left: 22.5vw;
+    margin-top: -2vw;
+}
+
+div.shape {
+    width: 6.490483162518301vw;
+    height: 12.395314787701318vw;
+    background: linear-gradient(180deg, #70D4FF 0%, rgba(23, 163, 207, 0.880781) 56.77%, rgba(0, 64, 187, 0.79) 100%);
+    margin-left: 70vw;
+    margin-top: -10vw;
+}
+
+img.drib {
+    width: 2.5vw;
+    height: 2.5vw;
+    margin-top: 7.5vw;
+    margin-left: 2.5vw;
+    transition: transform ease-in-out 0.3s;
+}
+
+img.drib:hover {
+    transform: scale(1.25);
+}
+
+p.drib {
+    color: white;
+    font-family: Poppins;
+    margin-left: 7.5vw;
+    margin-top: -2.3vw;
+    text-decoration: none;
+}
+
+div.line {
+    width: 0vw;
+    height: 6.5vw;
+    border: 1.55357px solid rgba(255, 255, 255, 0.75);
+    margin-top: 3.5vw;
+    margin-left: 3.45vw;
+}
+
+img.link {
+    width: 2.8vw;
+    height: 2.8vw;
+    margin-top: 1.25vw;
+    margin-left: 2.4vw;
+    transition: transform ease-in-out 0.3s;
+}
+
+img.link:hover {
+    transform: scale(1.25);
+}
+
+p.link {
+    color: white;
+    font-family: Poppins;
+    margin-left: 7.6vw;
+    margin-top: -2.3vw;
+    text-decoration: none;
+}
+
+div.socials {
+    color: white;
+    font-family: Poppins;
+    margin-left: 7.5vw;
+    margin-top: -8.5vw;
+}
+
+div.line1 {
+    width: 0vw;
+    height: 18vw;
+    border: 1.55357px solid rgba(255, 255, 255, 0.75);
+    margin-top: -19.5vw;
+    margin-left: 40vw;
+}
+
+div.own {
+    line-height: 2.05vw;
+    font-family: Poppins;
+    color: white;
+    margin-left: 50vw;
+    margin-right: 13vw;
+    margin-top: -19.25vw;
+}
+
+.education {
+    margin-top: 2vw;
+}
+
+img.edu {
+    width: 2.5vw;
+    height: 2.5vw;
+    margin-left: 2vw;
+    margin-top: 2.5vw;
+}
+
+img.bulb {
+    width: 2.5vw;
+    height: 2.75vw;
+    margin-left: 2vw;
+    margin-top: 2.5vw;
+}
+
+img.bulb1 {
+    width: 2.5vw;
+    height: 2.75vw;
+    margin-left: -0.5vw;
+    margin-top: 2.5vw;
+}
+
+img.bulb2 {
+    width: 2.5vw;
+    height: 2.25vw;
+    margin-left: -0.5vw;
+    margin-top: 2.5vw;
+}
+
+h2.edu {
+    font-family: 'Poppins';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 1.25vw;
+    margin-left: 7vw;
+    margin-top: -2.5vw;
+    color: #13A9EA
+}
+
+h2.edu1 {
+    font-family: 'Poppins';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 1.25vw;
+    margin-left: 7vw;
+    margin-top: -3.5vw;
+    color: #13A9EA
+}
+
+span.ten {
+    font-size: 4.5vw;
+    color: rgb(138, 200, 255);
+    margin-left: 2.5vw;
+}
+
+h3.ten {
+    color: white;
+    font-family: Poppins;
+    font-size: 1.15vw;
+    margin-left: 6.75vw;
+    margin-top: -3.45vw;
+}
+
+div.line2 {
+    width: 0vw;
+    height: 4vw;
+    border: 1.55357px solid rgba(255, 255, 255, 0.75);
+    margin-top: 1vw;
+    margin-left: 3.2vw;
+}
+
+div.line7 {
+    width: 0vw;
+    height: 6vw;
+    border: 1.55357px solid rgba(255, 255, 255, 0.75);
+    margin-top: 1.5vw;
+    margin-left: 3.2vw;
+}
+
+div.line5 {
+    width: 0vw;
+    height: 8vw;
+    border: 1.55357px solid rgba(255, 255, 255, 0.75);
+    margin-top: 1vw;
+    margin-left: 3.2vw;
+}
+
+p.ski {
+    color: white;
+    font-family: Poppins;
+    margin-left: 6.75vw;
+    margin-top: -7.85vw;
+}
+
+div.line3 {
+    width: 0vw;
+    height: 6vw;
+    border: 1.55357px solid rgba(255, 255, 255, 0.75);
+    margin-top: 1vw;
+    margin-left: 3.2vw;
+}
+
+div.line6 {
+    width: 0vw;
+    height: 4.5vw;
+    border: 1.55357px solid rgba(255, 255, 255, 0.75);
+    margin-top: 1vw;
+    margin-left: 3.2vw;
+}
+
+div.line4 {
+    width: 0vw;
+    height: 30vw;
+    border: 1.55357px solid rgba(255, 255, 255, 0.75);
+    margin-top: -32.75vw;
+    margin-left: 40vw;
+}
+
+p.ten {
+    color: white;
+    font-family: Poppins;
+    margin-left: 6.75vw;
+    margin-top: -3.85vw;
+}
+
+p.ten2 {
+    color: white;
+    font-family: Poppins;
+    margin-left: 6.9vw;
+    margin-top: -5.85vw;
+}
+
+p.twelve {
+    margin-top: -5.5vw;
+    margin-left: 6.75vw;
+    color: white;
+    font-family: Poppins;
+}
+
+p.intern {
+    margin-top: -4vw;
+    margin-left: 6.75vw;
+    color: white;
+    font-family: Poppins;
+}
+
+.twelve {
+    margin-top: -0.75vw;
+}
+
+.skill {
+    margin-left: 47.5vw;
+    margin-right: 13vw;
+    margin-top: -35.25vw;
+}
+
+.pskills {
+    margin-left: 47.5vw;
+    margin-right: 13vw;
+    margin-top: -33vw;
+}
+
+.below {
+    margin-top: 10vw;
+}
+
+a:link {
+    text-decoration: none;
+}
+
+a:link {
+    text-decoration: none;
+}
+
+
+a:visited {
+    text-decoration: none;
+}
+
+
+a:hover {
+    text-decoration: none;
+}
+
+
+a:active {
+    text-decoration: none;
+}
+
+#myBtn {
+    display: none;
+    /* Hidden by default */
+    position: fixed;
+    /* Fixed/sticky position */
+    bottom: 20px;
+    /* Place the button at the bottom of the page */
+    right: 30px;
+    /* Place the button 30px from the right */
+    z-index: 99;
+    /* Make sure it does not overlap */
+    border: none;
+    /* Remove borders */
+    outline: none;
+    /* Remove outline */
+    background-color: rgb(0, 166, 231);
+    /* Set a background color */
+    color: white;
+    /* Text color */
+    cursor: pointer;
+    /* Add a mouse pointer on hover */
+    padding: 15px;
+    /* Some padding */
+    border-radius: 100%;
+    /* Rounded corners */
+    font-size: 25px;
+    width: 58px;
+    /* Increase font size */
+}
+
+#myBtn:hover {
+    background-color: rgb(0, 87, 145);
+    /* Add a dark-grey background on hover */
+}
